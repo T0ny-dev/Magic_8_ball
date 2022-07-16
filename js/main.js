@@ -40,7 +40,7 @@ const magicBall = (ballMagic, ballMessage) => {
 			ballMessage.classList.remove("hide")
 			ballMessage.classList.add("message__ball")
 		} else if (numberMagic >= 8 && numberMagic < 10) {
-			ballMessage.innerHTML = `Yes`
+			ballMessage.innerHTML = `YES`
 			ballMessage.classList.remove("hide")
 			ballMessage.classList.add("message__ball")
 		} else {
