@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0d1117;
+}
+
+.ball {
+  height: 400px;
+  width: 400px;
+  background-image: url("img/ball-8.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ball__message {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*///// respond ball 8 class*/
+.respond {
+  height: 400px;
+  width: 400px;
+  background-image: url("img/bola-8-respond.png");
+  background-size: cover;
+}
+
+#respondMessage {
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.message__ball {
+  animation-name: menssage;
+  animation-duration: 1.5s;
+}
+
+.hide {
+  display:none
+}
+
+.ball__Animation {
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  animation-name: move;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
+  position: relative;
+
+}
+
+.ball__nomove {
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@keyframes move {
+  0% { left: 0; top: 0;}
+  50% {left: -3px; top: -3px;}
+  100% {left: 0; top: 0;}
+}
+
+@keyframes  menssage {
+  0% {opacity: 0.0;}
+  25% { opacity: 0.25;}
+  50% { opacity: 0.50;}
+  75% { opacity: 0.75;}
+  100% {opacity: 1;}
+}
