@@ -6,7 +6,7 @@ to play, you think of a question and click on the ball, in a moment it shows a m
 ## Goodluck 
 > to edit the responses you can go to js/main.js and change the response of the magicBall function
 
-<img src="img/answer.png">
+<img src="img/answer.PNG">
 
 > In this part you can change the answers
 
